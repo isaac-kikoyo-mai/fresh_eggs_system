@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card shadow">
+
+    <div class="card-header bg-primary text-white">
+
+        <h4>
+            <i class="fas fa-file-pdf"></i>
+            Generate Summary Report
+        </h4>
+
+    </div>
+
+    <div class="card-body">
+
+        <form method="get"
+              action="{% url 'summary_report_pdf' %}">
+
+            <div class="col-md-6 mb-3">
+
+                <label class="form-label">
+                    Start Date
+                </label>
+
+                {{ form.start_date }}
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <label class="form-label">
+                    End Date
+                </label>
+
+                {{ form.end_date }}
+
+            </div>
+
+</div>
+
+    <button type="submit"
+            class="btn btn-danger">
+
+        <i class="fas fa-file-pdf"></i>
+        Export PDF
+
+    </button>
+
+    {% url 'dashboard' %}
+
+    Cancel
+
+    </a>
+
+    </form>
+
+</div>
+
+</div>
+
+{% endblock %}

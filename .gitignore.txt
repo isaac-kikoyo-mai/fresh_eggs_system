@@ -1,0 +1,26 @@
+# Django
+media/
+staticfiles/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Environment variables
+.env
+
+# Logs
+*.log
